@@ -33,12 +33,10 @@ Ensure you have the following Python libraries installed:
 
 Install dependencies using:
 
-```bash
 pip install scikit-learn pandas numpy seaborn matplotlib
 Getting Started
 Clone the repository:
 
-bash
 Copy code
 git clone https://github.com/chandraparsad3/California-Housing-Price-Prediction.git
 cd California-Housing-Price-Prediction
@@ -54,8 +52,6 @@ regressor.pkl: Pickle file containing the trained Linear Regression model.
 Usage
 Load the trained scaler and regressor:
 
-python
-Copy code
 import pickle
 
 # Load scaler
@@ -65,14 +61,10 @@ scaler = pickle.load(open('scaler.pkl', 'rb'))
 regressor = pickle.load(open('regressor.pkl', 'rb'))
 Preprocess new data:
 
-python
-Copy code
 # Assuming new_data is your new input data
 new_data_scaled = scaler.transform(new_data)
 Make predictions:
 
-python
-Copy code
 predictions = regressor.predict(new_data_scaled)
 print(predictions)
 Model Evaluation
