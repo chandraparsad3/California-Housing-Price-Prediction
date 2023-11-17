@@ -33,24 +33,24 @@ Ensure you have the following Python libraries installed:
 
 Install dependencies using:
 
-pip install scikit-learn pandas numpy seaborn matplotlib
+-pip install scikit-learn pandas numpy seaborn matplotlib
 Getting Started
 Clone the repository:
 
 Copy code
-git clone https://github.com/chandraparsad3/California-Housing-Price-Prediction.git
-cd California-Housing-Price-Prediction
-Install Dependencies.
+-git clone https://github.com/chandraparsad3/California-Housing-Price-Prediction.git
+-cd California-Housing-Price-Prediction
+-Install Dependencies.
 
 Run the Jupyter notebook or Python script:
 
-Execute the California_Housing_Prediction.ipynb Jupyter notebook or Python script.
-Project Structure
-California_Housing_Prediction.ipynb: Jupyter notebook with project code.
+-Execute the California_Housing_Prediction.ipynb Jupyter notebook or Python script.
+-Project Structure
+-California_Housing_Prediction.ipynb: Jupyter notebook with project code.
 
-scaler.pkl: Pickle file containing the trained StandardScaler.
+-scaler.pkl: Pickle file containing the trained StandardScaler.
 
-regressor.pkl: Pickle file containing the trained Linear Regression model.
+-regressor.pkl: Pickle file containing the trained Linear Regression model.
 
 Usage
 Load the trained scaler and regressor:
@@ -65,12 +65,12 @@ regressor = pickle.load(open('regressor.pkl', 'rb'))
 Preprocess new data:
 
 # Assuming new_data is your new input data
-new_data_scaled = scaler.transform(new_data)
-Make predictions:
+-new_data_scaled = scaler.transform(new_data)
+-Make predictions:
 
-predictions = regressor.predict(new_data_scaled)
-print(predictions)
-Model Evaluation
+-predictions = regressor.predict(new_data_scaled)
+-print(predictions)
+-Model Evaluation
 The model has been evaluated using Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared. Adjusted R-squared is also calculated for more accuracy.
 
 MAE: 0.54
