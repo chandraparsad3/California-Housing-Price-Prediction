@@ -47,8 +47,11 @@ Run the Jupyter notebook or Python script:
 Execute the California_Housing_Prediction.ipynb Jupyter notebook or Python script.
 Project Structure
 California_Housing_Prediction.ipynb: Jupyter notebook with project code.
+
 scaler.pkl: Pickle file containing the trained StandardScaler.
+
 regressor.pkl: Pickle file containing the trained Linear Regression model.
+
 Usage
 Load the trained scaler and regressor:
 
