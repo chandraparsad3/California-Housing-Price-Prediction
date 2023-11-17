@@ -66,16 +66,23 @@ Preprocess new data:
 
 # Assuming new_data is your new input data
 -new_data_scaled = scaler.transform(new_data)
+
 -Make predictions:
 
 -predictions = regressor.predict(new_data_scaled)
+
 -print(predictions)
+
 -Model Evaluation
 The model has been evaluated using Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared. Adjusted R-squared is also calculated for more accuracy.
 
-MAE: 0.54
-MSE: 0.55
-RMSE: 0.74
-R-squared: 0.60
-Adjusted R-squared: 0.60
+-MAE: 0.54
+
+-MSE: 0.55
+
+-RMSE: 0.74
+
+-R-squared: 0.60
+
+-Adjusted R-squared: 0.60
 Feel free to experiment with the notebook and make improvements based on your specific use case.
